@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/wever/CLionProjects/TesteF/main.c
+stdio.h
+-
+stdlib.h
+-
+semaphore.h
+-
+pthread.h
+-
+sys/unistd.h
+-
+
