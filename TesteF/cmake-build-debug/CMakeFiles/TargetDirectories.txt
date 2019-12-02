@@ -1,3 +1,0 @@
-/cygdrive/c/Users/wever/CLionProjects/TesteF/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/wever/CLionProjects/TesteF/cmake-build-debug/CMakeFiles/TesteF.dir
-/cygdrive/c/Users/wever/CLionProjects/TesteF/cmake-build-debug/CMakeFiles/edit_cache.dir
