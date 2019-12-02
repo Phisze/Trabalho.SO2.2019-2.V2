@@ -72,11 +72,15 @@ void agarraGarfo(int nfilosofo)
 {
     //sem_wait(&mutex);
     pthread_mutex_lock(&mutex);
+
     estado[nfilosofo] = FOME;
     listaEspera[nfilosofo] = 1;
+
     printf("Filosofo %s[%d] tem fome.\n", passageiros[nfilosofo].nome, passageiros[nfilosofo].prioridade);
+
     //+1 para imprimir filosofo 1 e nao filosofo 0
     testar(nfilosofo);
+
     //sem_post(&mutex);
     //sem_wait(&S[nfilosofo]);
     pthread_mutex_unlock(&mutex);
@@ -183,7 +187,7 @@ void testar(int nfilosofo)
         //printf("Filosofo %d agarrou os garfos %d e %d.\n", nfilosofo + 1, ESQUERDA + 1, nfilosofo + 1);
         printf("Filosofo %s[%d] esta a comer.\n", passageiros[nfilosofo].nome, passageiros[nfilosofo].prioridade);
         //sem_post(&S[nfilosofo]);
-        pthread_mutex_unlock(&S[nfilosofo]);
+        //pthread_mutex_unlock(&S[nfilosofo]);
     }
 }
 
